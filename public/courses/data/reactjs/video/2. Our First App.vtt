@@ -1,0 +1,542 @@
+WEBVTT
+
+1
+00:00:00.670 --> 00:00:05.370
+I have made a lot of content around react over the years, and I get asked all the time, what is the
+
+2
+00:00:05.370 --> 00:00:06.660
+best way to learn react?
+
+3
+00:00:06.840 --> 00:00:09.480
+The answer to that is to write code, without a doubt.
+
+4
+00:00:10.120 --> 00:00:11.790
+So let's start off this project, right.
+
+5
+00:00:11.850 --> 00:00:15.020
+Let's start to work on a very small project right now.
+
+6
+00:00:15.510 --> 00:00:17.670
+Let me show you a mockup of what we're gonna try to build.
+
+7
+00:00:18.780 --> 00:00:19.770
+So this is what we're gonna make.
+
+8
+00:00:20.350 --> 00:00:25.260
+We're going to try to make a little English to just about any other language, text, translator.
+
+9
+00:00:25.660 --> 00:00:27.990
+So user is going to enter in some English text right here.
+
+10
+00:00:28.470 --> 00:00:29.970
+They're then going to select a language.
+
+11
+00:00:30.220 --> 00:00:34.950
+And then we're going to translate their text into that target language and display it at the very bottom.
+
+12
+00:00:35.670 --> 00:00:36.540
+And just you don't know.
+
+13
+00:00:36.540 --> 00:00:38.850
+We don't need to know Russian to put this project together.
+
+14
+00:00:39.060 --> 00:00:42.750
+We're going to use an outside API to actually do the translation for us.
+
+15
+00:00:43.820 --> 00:00:47.920
+But his very first project, we're going to be working on an online code editor.
+
+16
+00:00:48.940 --> 00:00:50.110
+This is a link to it right here.
+
+17
+00:00:50.410 --> 00:00:55.630
+This is the only project in this course where we will be using an online I.D. All the other projects
+
+18
+00:00:55.630 --> 00:00:57.490
+you work on will be created on your machine.
+
+19
+00:00:57.820 --> 00:01:03.430
+We're only using this online I.D. to skip over a little bit of setup and also to make use of some code
+
+20
+00:01:03.430 --> 00:01:05.080
+that I wrote out ahead of time for you.
+
+21
+00:01:06.010 --> 00:01:10.180
+Gonna take this link right here and open it up inside of a new tab inside my browser.
+
+22
+00:01:13.910 --> 00:01:17.100
+So right away, we're going to see I have file explorer on the left.
+
+23
+00:01:17.280 --> 00:01:18.420
+Code editor in the middle.
+
+24
+00:01:18.510 --> 00:01:20.730
+And then a preview window on the right hand side.
+
+25
+00:01:21.540 --> 00:01:25.080
+By default, a file should be open called app dot J.S..
+
+26
+00:01:25.440 --> 00:01:31.200
+If that file is not open and find it inside this SIRC folder and open it right away, we're going to
+
+27
+00:01:31.200 --> 00:01:33.920
+add all the code for this project directly into this app.
+
+28
+00:01:33.930 --> 00:01:34.890
+Dot J.S. file.
+
+29
+00:01:35.640 --> 00:01:39.750
+Inside of here, you're going to see a little bit of what looks like H.T. mail right away.
+
+30
+00:01:40.440 --> 00:01:45.750
+This content right here is deciding or determining what gets displayed on the preview window over here.
+
+31
+00:01:46.440 --> 00:01:50.370
+So if we change this text right here, you say either.
+
+32
+00:01:51.810 --> 00:01:54.790
+We'll see the output here on the right hand side change as well.
+
+33
+00:01:55.930 --> 00:01:58.570
+OK, so let's start to write out some code for our project.
+
+34
+00:01:58.840 --> 00:02:04.000
+I want, you know, just really quickly, we're going to write out a lot of very strange code very quickly
+
+35
+00:02:04.000 --> 00:02:04.300
+here.
+
+36
+00:02:04.750 --> 00:02:07.810
+You do not need to memorize any of the code that we're about to write out.
+
+37
+00:02:07.930 --> 00:02:12.340
+This is just a very quick demonstration and it's just kind of a jumping off point, something to give
+
+38
+00:02:12.340 --> 00:02:13.390
+us, something to talk about.
+
+39
+00:02:13.390 --> 00:02:16.810
+For the first part of this course, we're going to discuss just about all the code that we're about
+
+40
+00:02:16.810 --> 00:02:18.070
+to write in just a moment.
+
+41
+00:02:18.940 --> 00:02:19.160
+All right.
+
+42
+00:02:19.210 --> 00:02:23.170
+So here's what we're going to do at the very top of the app Dot James file.
+
+43
+00:02:23.780 --> 00:02:26.740
+We are going to add in three different import statements.
+
+44
+00:02:27.340 --> 00:02:29.860
+So I'm going to write in import field.
+
+45
+00:02:30.710 --> 00:02:37.190
+From then inside of a string, I'll put in dot slash components slash field.
+
+46
+00:02:38.130 --> 00:02:40.270
+And I'm going to say this many times throughout the course.
+
+47
+00:02:40.600 --> 00:02:43.060
+Double check your spelling of the word component's right there.
+
+48
+00:02:43.240 --> 00:02:46.180
+It is a very easy word to make a typo on there.
+
+49
+00:02:46.180 --> 00:02:47.650
+Just make sure you've got the correct typing.
+
+50
+00:02:48.680 --> 00:02:51.050
+We're now going to add in two other import statements.
+
+51
+00:02:51.330 --> 00:02:53.890
+They'll put an import languages.
+
+52
+00:02:55.450 --> 00:02:56.680
+From component's.
+
+53
+00:02:57.670 --> 00:02:58.360
+Languages.
+
+54
+00:03:00.260 --> 00:03:02.300
+And finally, translate from.
+
+55
+00:03:03.360 --> 00:03:04.110
+Component's.
+
+56
+00:03:09.410 --> 00:03:14.780
+Then down inside of this function where we've got this d'Hiv right here at present, I'm going to remove
+
+57
+00:03:14.780 --> 00:03:16.340
+that each one element.
+
+58
+00:03:16.490 --> 00:03:18.440
+So I going to highlight that whole thing and delete it.
+
+59
+00:03:19.280 --> 00:03:22.610
+And then going to show these three different components.
+
+60
+00:03:22.640 --> 00:03:26.540
+That's what these are referred to them as, components inside of this div right here.
+
+61
+00:03:26.810 --> 00:03:33.090
+And I can do so by writing out what looks like a little bit of each GMO I'm going to put in field.
+
+62
+00:03:33.590 --> 00:03:36.020
+And then a forward slash and a closing carrot.
+
+63
+00:03:37.200 --> 00:03:39.560
+I'll then do the same for languages.
+
+64
+00:03:40.740 --> 00:03:41.940
+And translate.
+
+65
+00:03:43.160 --> 00:03:46.280
+As soon as I do that, we can start to see some content up here on the right hand side.
+
+66
+00:03:46.370 --> 00:03:48.650
+And it looks awfully close to what you and I are trying to build.
+
+67
+00:03:49.520 --> 00:03:55.700
+The only element that's really missing in there is maybe that little kind of horizontal line right there,
+
+68
+00:03:55.730 --> 00:03:58.880
+which be kind of nice to have just to kind of separate these different elements.
+
+69
+00:03:59.450 --> 00:04:05.660
+So to put in a horizontal line right above translate, I'm going to write in each our like.
+
+70
+00:04:05.660 --> 00:04:09.230
+So now give me a very faint little horizontal line.
+
+71
+00:04:10.530 --> 00:04:14.850
+OK, so now we've got some content appearing on the screen, but you can see right away that nothing
+
+72
+00:04:14.850 --> 00:04:16.070
+is actually being translated.
+
+73
+00:04:16.080 --> 00:04:20.250
+And as a matter of fact, if I type something in here, I get a really nasty ear right away.
+
+74
+00:04:20.760 --> 00:04:25.320
+If you get an error like that, you can always click on this refresh button and you'll see the original
+
+75
+00:04:25.320 --> 00:04:26.400
+content start to appear.
+
+76
+00:04:27.580 --> 00:04:31.450
+So we're going to add in a little bit more configuration to each of these components.
+
+77
+00:04:31.570 --> 00:04:35.620
+And as we add in the configuration, it's going to make our applications start to come to life.
+
+78
+00:04:36.280 --> 00:04:40.300
+The coda we're about to write is also going to be a very confusing and a little bit weird.
+
+79
+00:04:40.600 --> 00:04:41.800
+Again, don't sweat it.
+
+80
+00:04:41.830 --> 00:04:44.030
+We're going to go over all this code in great detail.
+
+81
+00:04:45.040 --> 00:04:47.440
+But here's what we're gonna do up at the very top.
+
+82
+00:04:47.530 --> 00:04:51.870
+I'm going to find a import statement for react right after the word react.
+
+83
+00:04:51.980 --> 00:04:56.830
+I going to add in a coma, really races and then the word use state.
+
+84
+00:04:59.260 --> 00:05:01.000
+Then inside of my app component.
+
+85
+00:05:02.120 --> 00:05:06.630
+I going to write in concert a square bracket set of square brackets.
+
+86
+00:05:07.100 --> 00:05:08.210
+So it kind of looks like an array.
+
+87
+00:05:08.840 --> 00:05:12.110
+I'll write in language and set language.
+
+88
+00:05:13.510 --> 00:05:14.480
+Then an equals.
+
+89
+00:05:15.600 --> 00:05:19.320
+You states, and I'll pass on to that a string of are you?
+
+90
+00:05:21.690 --> 00:05:25.350
+Then on the next line down, I'm going to put in a very similar looking line.
+
+91
+00:05:25.470 --> 00:05:27.900
+So the keyword const square brackets.
+
+92
+00:05:28.320 --> 00:05:29.870
+Text set.
+
+93
+00:05:29.910 --> 00:05:30.420
+Text.
+
+94
+00:05:31.790 --> 00:05:35.460
+And I'll say you state now pass in an empty string.
+
+95
+00:05:37.200 --> 00:05:38.550
+OK, so just one more step here.
+
+96
+00:05:38.880 --> 00:05:44.040
+We're going to now take these four different variables and pass them to these three different components
+
+97
+00:05:44.040 --> 00:05:46.950
+that we're showing inside of here, just a little bit more weird code.
+
+98
+00:05:47.010 --> 00:05:50.640
+And then we'll have something really interesting being put together are actually running here.
+
+99
+00:05:51.540 --> 00:05:57.600
+The first off on field, I'm going to say label equals double quotes.
+
+100
+00:05:58.620 --> 00:05:59.490
+Enter English.
+
+101
+00:06:01.080 --> 00:06:03.460
+I'll then put in on change equals.
+
+102
+00:06:04.550 --> 00:06:06.690
+Really, braces set.
+
+103
+00:06:06.740 --> 00:06:07.250
+Text.
+
+104
+00:06:08.950 --> 00:06:12.880
+And value equals really Brace's text.
+
+105
+00:06:13.990 --> 00:06:14.230
+OK.
+
+106
+00:06:14.290 --> 00:06:16.180
+Just two more on languages.
+
+107
+00:06:16.210 --> 00:06:18.990
+I can write in language equals early races.
+
+108
+00:06:19.180 --> 00:06:19.780
+Language.
+
+109
+00:06:21.630 --> 00:06:27.930
+Then right after that will add in on language change equals really Brace's.
+
+110
+00:06:28.910 --> 00:06:30.140
+Set language.
+
+111
+00:06:31.550 --> 00:06:34.670
+And then finally, the last little piece of text you're damn on translate.
+
+112
+00:06:35.000 --> 00:06:38.720
+We're gonna write in text is Liberalises text.
+
+113
+00:06:40.090 --> 00:06:43.250
+And language is really Brace's language.
+
+114
+00:06:44.140 --> 00:06:44.680
+And that's it.
+
+115
+00:06:45.340 --> 00:06:48.700
+Now, at this point time, we're going to test out our application on the right hand side.
+
+116
+00:06:49.060 --> 00:06:54.420
+If you get any errors, I can guarantee you that there is a typo somewhere inside of this app, dot,
+
+117
+00:06:54.440 --> 00:06:55.090
+G.S. file.
+
+118
+00:06:55.550 --> 00:07:00.010
+The code we've written inside of here is 100 percent agnostic against the version of react that we're
+
+119
+00:07:00.010 --> 00:07:00.380
+using.
+
+120
+00:07:00.400 --> 00:07:03.880
+In other words, this code is going to work for years and years and years.
+
+121
+00:07:04.230 --> 00:07:08.440
+If you get any errors whatsoever, I can guarantee you you have a typo inside this file.
+
+122
+00:07:09.440 --> 00:07:09.740
+All right.
+
+123
+00:07:09.850 --> 00:07:12.890
+Let's now do a little test over here on the right hand side.
+
+124
+00:07:13.340 --> 00:07:17.660
+I'm going to enter in a little English brace, so I'll put in something like hi there.
+
+125
+00:07:18.230 --> 00:07:22.730
+And as soon as I do, I'll then see the equivalent Russian tech start to appear at the very bottom.
+
+126
+00:07:23.480 --> 00:07:27.680
+We can then change the language, maybe go over to about Swahili.
+
+127
+00:07:28.380 --> 00:07:30.470
+There is the equivalent about Arabic.
+
+128
+00:07:30.520 --> 00:07:31.430
+There is the equivalent.
+
+129
+00:07:31.940 --> 00:07:34.250
+And well, I'd say this works out pretty well.
+
+130
+00:07:34.790 --> 00:07:37.640
+We can also change the text about how are you?
+
+131
+00:07:38.760 --> 00:07:40.500
+And there's the equivalent in Japanese.
+
+132
+00:07:40.530 --> 00:07:43.980
+And, of course, once again, we can change the target language as well.
+
+133
+00:07:44.880 --> 00:07:45.090
+OK.
+
+134
+00:07:45.150 --> 00:07:49.290
+So a fun little application, but a lot of very mysterious code here.
+
+135
+00:07:49.740 --> 00:07:54.690
+Let's take a quick pause and start to examine this code and understand what is going on in just a moment.
+

@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:01.580 --> 00:00:02.630
+My name is Stephen Grider.
+2
+
+2
+00:00:02.660 --> 00:00:07.760
+And in the next couple of hours I'm going to tell you everything I know about React and Redux. Before we dive
+3
+
+3
+00:00:07.760 --> 00:00:12.450
+into any technical topic I want to very quickly tell you how you can get help inside this course.
+4
+
+4
+00:00:12.620 --> 00:00:17.630
+So as we start to go through videos and write out code if you have any questions or need help troubleshooting
+5
+
+5
+00:00:17.900 --> 00:00:20.360
+there's a couple of different ways that you can get some help.
+6
+
+6
+00:00:20.360 --> 00:00:22.130
+First off you can reach out to me on Udemy's QA
+7
+
+7
+00:00:22.370 --> 00:00:23.630
+discussion boards.
+8
+
+8
+00:00:23.630 --> 00:00:28.130
+I always recommend you start there because very frequently if you're running into an issue chances are
+9
+
+9
+00:00:28.130 --> 00:00:29.770
+someone else has as well.
+10
+
+10
+00:00:29.900 --> 00:00:34.130
+And there might already be some posts describing how to solve the issue that you've come up with.
+11
+
+11
+00:00:34.330 --> 00:00:37.180
+Second way to get in touch with me is to reach out to me on Twitter.
+12
+
+12
+00:00:37.190 --> 00:00:38.510
+That's my handle right there.
+13
+
+13
+00:00:38.510 --> 00:00:41.430
+And then finally you can also e-mail me as well.
+14
+
+14
+00:00:41.460 --> 00:00:47.060
+Now a quick note here I usually answer questions on all these different forms of media between Monday
+15
+
+15
+00:00:47.060 --> 00:00:49.090
+and Friday around 9:00 a.m. PST.
+16
+
+16
+00:00:49.160 --> 00:00:53.840
+So if you reach out to me on like Saturday nights I may not get a response back to you until Monday
+17
+
+17
+00:00:53.840 --> 00:00:54.200
+morning.
+18
+
+18
+00:00:54.230 --> 00:00:55.920
+Just something to keep in mind.
+19
+
+19
+00:00:55.940 --> 00:00:56.160
+OK.
+20
+
+20
+00:00:56.180 --> 00:00:58.270
+So with all this in mind let's take a pause right here.
+21
+
+21
+00:00:58.280 --> 00:01:00.620
+We're going to start diving in to React in the next section.
+

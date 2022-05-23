@@ -1,0 +1,21 @@
+1. open share folder and open gitbash
+       then run this command npm install , npm install package.json
+
+2. go to share/public/course folder and open gitbash
+         then run this command npm install , npm install package.json
+
+3.  when you add new course in course folder  
+         then run this command node ./index.js
+	also run node ./server.js
+
+4.  open share folder and open gitbash
+
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install @mui/material @mui/styled-engine-sc styled-components
+
+npm install @mui/icons-material
+
+
+       then run this command npm start

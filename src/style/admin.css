@@ -1,0 +1,15 @@
+.hero{
+    height: 400px;
+    margin-top: 70px;
+    background-image: url(../assets/hero.jpg);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+}
+.admin{
+    margin-top: 20px!important;
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    width: 260px;
+}
