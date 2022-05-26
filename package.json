@@ -6,12 +6,12 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.6.0",
-    "@mui/material": "^5.6.0",
-    "@mui/styled-engine-sc": "^5.5.2",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.25.0",
     "fs": "0.0.1-security",
@@ -20,7 +20,7 @@
     "react": "^17.0.2",
     "react-awesome-player": "^1.1.0",
     "react-dom": "^17.0.2",
-    "react-player": "^2.10.0",
+    "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-video-js-player": "^1.1.1",
@@ -52,6 +52,6 @@
     ]
   },
   "devDependencies": {
-    "video.js": "^7.18.1"
+    "video.js": "^7.20.0"
   }
 }
